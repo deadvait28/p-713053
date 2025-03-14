@@ -1,3 +1,6 @@
+
+import { Download, Smartphone } from "lucide-react";
+
 export function Hero() {
   return (
     <section className="bg-zinc-950 flex w-full items-center gap-[40px_96px] overflow-hidden font-semibold justify-center flex-wrap px-8 py-20 max-md:max-w-full max-md:px-5">
@@ -28,12 +31,20 @@ export function Hero() {
         </p>
 
         <div className="flex gap-4 text-sm font-medium whitespace-nowrap leading-none mt-12 max-md:mt-10">
-          <button className="self-stretch bg-white shadow-[0px_1px_2px_-1px_rgba(0,0,0,0.10),0px_1px_3px_0px_rgba(0,0,0,0.10)] gap-2 text-zinc-900 px-4 py-2 rounded-md hover:bg-neutral-100 transition-colors">
-            Download
-          </button>
-          <button className="self-stretch gap-2 text-neutral-50 px-4 py-2 rounded-md hover:bg-zinc-900 transition-colors">
-            Github
-          </button>
+          <a 
+            href="#" 
+            className="self-stretch bg-white shadow-[0px_1px_2px_-1px_rgba(0,0,0,0.10),0px_1px_3px_0px_rgba(0,0,0,0.10)] text-zinc-900 px-4 py-2 rounded-md hover:bg-neutral-100 transition-colors flex items-center gap-2"
+          >
+            <Download className="h-4 w-4" />
+            <span>App Store</span>
+          </a>
+          <a 
+            href="#" 
+            className="self-stretch text-neutral-50 px-4 py-2 rounded-md hover:bg-zinc-900 transition-colors flex items-center gap-2"
+          >
+            <Smartphone className="h-4 w-4" />
+            <span>Play Store</span>
+          </a>
         </div>
       </div>
 
