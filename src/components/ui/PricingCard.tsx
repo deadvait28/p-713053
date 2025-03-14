@@ -1,3 +1,4 @@
+
 interface PricingCardProps {
   name: string;
   description: string;
@@ -22,14 +23,16 @@ export function PricingCard({
   buttonVariant,
 }: PricingCardProps) {
   return (
-    <div className="bg-[rgba(250,250,250,0.02)] relative min-w-60 min-h-[541px] max-w-[420px] overflow-hidden flex-1 shrink basis-[0%] pt-6 pb-[143px] px-6 rounded-xl max-md:pb-[100px] max-md:px-5">
+    <div className="bg-[#111111] relative min-w-60 min-h-[541px] max-w-[420px] overflow-hidden flex-1 shrink basis-[0%] pt-6 pb-[143px] px-6 rounded-xl max-md:pb-[100px] max-md:px-5">
       <div className="z-0 w-full max-w-[460px]">
         <div className="flex w-full items-center gap-2 text-xl text-neutral-50 font-semibold whitespace-nowrap leading-[1.4] justify-center">
-          <img
-            src={icon}
-            alt={`${name} icon`}
-            className="aspect-[1] object-contain w-4 self-stretch shrink-0 my-auto"
-          />
+          <div className="bg-zinc-900 w-4 h-4 rounded-full flex items-center justify-center">
+            <img
+              src={icon}
+              alt={`${name} icon`}
+              className="aspect-[1] object-contain w-2 self-stretch shrink-0 my-auto"
+            />
+          </div>
           <span className="self-stretch flex-1 shrink basis-[0%] my-auto">
             {name}
           </span>
@@ -77,11 +80,13 @@ export function PricingCard({
             key={index}
             className="flex w-full items-center gap-2 mt-2 first:mt-0"
           >
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/e0f4103a25a8c70ad0efe35825f8382d81a4d1e15c262ab854036ac0e56ff3d5?placeholderIfAbsent=true"
-              alt="Check"
-              className="aspect-[1] object-contain w-4 self-stretch shrink-0 my-auto"
-            />
+            <div className="bg-zinc-900 w-4 h-4 rounded-full flex items-center justify-center">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/e0f4103a25a8c70ad0efe35825f8382d81a4d1e15c262ab854036ac0e56ff3d5?placeholderIfAbsent=true"
+                alt="Check"
+                className="aspect-[1] object-contain w-2 self-stretch shrink-0 my-auto"
+              />
+            </div>
             <span className="self-stretch flex-1 shrink basis-[0%] my-auto">
               {feature}
             </span>
