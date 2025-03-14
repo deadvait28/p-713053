@@ -1,6 +1,4 @@
 
-import { Download, Smartphone } from "lucide-react";
-
 export function CTA() {
   return (
     <section className="bg-zinc-950 relative flex min-h-[306px] w-full flex-col overflow-hidden items-stretch justify-center px-8 max-md:max-w-full max-md:px-5">
@@ -9,20 +7,26 @@ export function CTA() {
           Just say the word and it will be done
         </h2>
 
-        <div className="self-center flex gap-4 text-sm font-medium whitespace-nowrap leading-none mt-12 max-md:mt-10">
+        <div className="self-center flex gap-4 mt-12 max-md:mt-10 flex-wrap">
           <a 
             href="#" 
-            className="self-stretch bg-white shadow-[0px_1px_2px_-1px_rgba(0,0,0,0.10),0px_1px_3px_0px_rgba(0,0,0,0.10)] text-zinc-900 px-4 py-2 rounded-md hover:bg-neutral-100 transition-colors flex items-center gap-2"
+            className="h-[40px] transition-opacity hover:opacity-90"
           >
-            <Download className="h-4 w-4" />
-            <span>App Store</span>
+            <img 
+              src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
+              alt="Download on the App Store" 
+              className="h-full"
+            />
           </a>
           <a 
             href="#" 
-            className="self-stretch text-neutral-50 px-4 py-2 rounded-md hover:bg-zinc-900 transition-colors flex items-center gap-2"
+            className="h-[40px] transition-opacity hover:opacity-90"
           >
-            <Smartphone className="h-4 w-4" />
-            <span>Play Store</span>
+            <img 
+              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
+              alt="Get it on Google Play" 
+              className="h-full"
+            />
           </a>
         </div>
       </div>
