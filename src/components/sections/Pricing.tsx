@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { PricingCard } from "../ui/PricingCard";
 
@@ -14,7 +15,7 @@ export function Pricing() {
       features: ["Connect up to 3 apps", "Get 3 automations", "Free forever"],
       icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/60c1642b5efc6b44ee75a0c2400c732e771d53ffc094d336417c68228165118d?placeholderIfAbsent=true",
       buttonText: "Download",
-      buttonVariant: "secondary",
+      buttonVariant: "secondary" as const,
     },
     {
       name: "Pro",
@@ -30,7 +31,7 @@ export function Pricing() {
       ],
       icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/928eef33e71a621ba902119e4a7ba403595c23f518172427a5f795f2c5845808?placeholderIfAbsent=true",
       buttonText: "Download",
-      buttonVariant: "primary",
+      buttonVariant: "primary" as const,
     },
     {
       name: "Enterprise",
@@ -47,7 +48,7 @@ export function Pricing() {
       ],
       icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/6f3a36246138b497b003e46b2fa0f1612533fea2aaef2ca5d6eb8aae687c8088?placeholderIfAbsent=true",
       buttonText: "Enquire",
-      buttonVariant: "secondary",
+      buttonVariant: "secondary" as const,
     },
   ];
 
