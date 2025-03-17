@@ -1,37 +1,39 @@
 
+import { Button } from "@/components/ui/button";
+
 export function CTA() {
   return (
-    <section className="bg-zinc-950 relative flex min-h-[306px] w-full flex-col overflow-hidden items-stretch justify-center px-8 max-md:max-w-full max-md:px-5">
-      <div className="z-0 flex w-full flex-col items-stretch flex-1 pt-32 pb-48 max-md:max-w-full max-md:py-[100px]">
-        <h2 className="text-neutral-50 text-center text-5xl font-semibold leading-none max-md:max-w-full max-md:text-[40px]">
-          Just say the word and it will be done
+    <section className="bg-zinc-950 flex flex-col w-full">
+      <div className="py-32 flex flex-col items-center text-center px-8 max-w-3xl mx-auto">
+        <img
+          src="/lovable-uploads/64167ca6-a599-48e5-8632-53e5ae09ecd1.png"
+          alt="The Relay Logo"
+          className="w-16 h-16 mb-8"
+        />
+        <h2 className="text-neutral-50 text-5xl font-semibold leading-tight mb-8">
+          Gone are the days of task droning
         </h2>
-
-        <div className="self-center flex gap-4 mt-12 max-md:mt-10 flex-wrap">
-          <a 
-            href="#" 
-            className="h-[40px] transition-opacity hover:opacity-90"
-          >
-            <img 
-              src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
-              alt="Download on the App Store" 
-              className="h-full"
-            />
-          </a>
-          <a 
-            href="#" 
-            className="h-[40px] transition-opacity hover:opacity-90"
-          >
-            <img 
-              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
-              alt="Get it on Google Play" 
-              className="h-full"
-            />
-          </a>
-        </div>
+        <p className="text-zinc-400 text-xl max-w-2xl mb-8">
+          Work shouldn't be about endless emails and notifications. With The
+          Relay, anyone can easily chat with and coordinate tasks across
+          apps, becoming a smart director of their digital world. Take
+          control, simplify your day, and reclaim your freedom.
+        </p>
       </div>
 
-      <div className="absolute z-0 flex min-h-[280px] w-full h-[280px] bottom-0 inset-x-0 bg-gradient-to-t from-zinc-950/50 to-transparent" />
+      <div className="bg-zinc-900 py-32 px-8 flex flex-col items-center text-center">
+        <h2 className="text-neutral-50 text-5xl font-semibold leading-tight mb-8">
+          Just say the word and it will be done
+        </h2>
+        <p className="text-zinc-400 text-xl max-w-2xl mb-12">
+          The Relay is powered by MCP (Model Context Protocol), 
+          an open-source, secure and standard connector between apps that will 
+          allow you to command them with The Relay's toolkit agent called Spark.
+        </p>
+        <Button className="bg-white text-black hover:bg-gray-200 px-6 py-6 h-auto text-base">
+          Join Waitlist
+        </Button>
+      </div>
     </section>
   );
 }
